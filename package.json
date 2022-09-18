@@ -1,0 +1,35 @@
+{
+  "name": "yxchain",
+  "version": "0.0.1-alpha",
+  "description": "Ledger distribuido en javascript",
+  "main": "index.js",
+  "repository": "https://github.com/develvad/YXChain.git",
+  "author": "develvad <develvad@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "babel-node index.js",
+    "nodemon": "nodemon --exec yarn start",
+    "lint": "eslint index.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  },
+  "jest": {
+    "silent": true,
+    "verbose": false,
+    "testEnvironment": "node"
+  }
+}
