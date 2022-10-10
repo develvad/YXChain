@@ -1,5 +1,5 @@
 import PKG from './package.json';
-import Block from './src/blockchain/Block';
+import Block from './src/blockchain/Block/Block';
 
 const { name, version } = PKG;
 console.log(name, '-', version, 'Starting...');
